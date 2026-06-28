@@ -721,6 +721,34 @@ var prevRefreshSig = globalThis.$RefreshSig$;
 $parcel$ReactRefreshHelpers$869f.prelude(module);
 
 try {
+// import { createRoot } from "react-dom/client";
+// import App from "./App";
+// import { Provider } from "react-redux";
+// import { store } from "./store";
+// import { RouterProvider, createBrowserRouter } from "react-router-dom";
+// import Home from "./pages/Home";
+// import Cart from "./pages/Cart";
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <App />,
+//     children: [
+//       {
+//         path: "/",
+//         element: <Home />,
+//       },
+//       {
+//         path: "/cart",
+//         element: <Cart />,
+//       },
+//     ],
+//   },
+// ]);
+// createRoot(document.querySelector("#root")).render(
+//   <Provider store={store}>
+//     <RouterProvider router={router} />
+//   </Provider>,
+// );
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _client = require("react-dom/client");
@@ -738,41 +766,41 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
             fileName: "main.js",
-            lineNumber: 12,
+            lineNumber: 43,
             columnNumber: 14
         }, undefined),
         children: [
             {
-                path: "/",
+                index: true,
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                     fileName: "main.js",
-                    lineNumber: 16,
-                    columnNumber: 18
+                    lineNumber: 45,
+                    columnNumber: 31
                 }, undefined)
             },
             {
-                path: "/cart",
+                path: "cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
                     fileName: "main.js",
-                    lineNumber: 20,
-                    columnNumber: 18
+                    lineNumber: 46,
+                    columnNumber: 32
                 }, undefined)
             }
         ]
     }
 ]);
-(0, _client.createRoot)(document.querySelector("#root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
+(0, _client.createRoot)(document.getElementById("root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
     store: (0, _store.store),
     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
         router: router
     }, void 0, false, {
         fileName: "main.js",
-        lineNumber: 28,
+        lineNumber: 53,
         columnNumber: 5
     }, undefined)
 }, void 0, false, {
     fileName: "main.js",
-    lineNumber: 27,
+    lineNumber: 52,
     columnNumber: 3
 }, undefined));
 
